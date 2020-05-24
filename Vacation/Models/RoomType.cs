@@ -11,7 +11,6 @@ namespace Vacation.Models
         public RoomType()
         {
             RoomTypeInHotels = new List<RoomTypeInHotel>();
-            //Baskets = new List<Basket>();
         }
         public int Id { get; set; }
 
@@ -24,6 +23,6 @@ namespace Vacation.Models
         public string info { get; set; }
 
         public virtual ICollection<RoomTypeInHotel> RoomTypeInHotels { get; set; }
-        //public virtual ICollection<Basket> Baskets { get; set; }
+        
     }
 }

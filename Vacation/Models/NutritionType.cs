@@ -11,7 +11,6 @@ namespace Vacation.Models
         public NutritionType()
         {
             NutritionTypeInHotels = new List<NutritionTypeInHotel>();
-            //Baskets = new List<Basket>();
         }
         public int Id { get; set; }
         [Required]
@@ -21,6 +20,6 @@ namespace Vacation.Models
         public string info { get; set; }
 
         public virtual ICollection<NutritionTypeInHotel> NutritionTypeInHotels { get; set; }
-        //public virtual ICollection<Basket> Baskets { get; set; }
+       
     }
 }

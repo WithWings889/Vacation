@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Vacation.Models;
 
 namespace Vacation.Models
 {
@@ -23,5 +24,7 @@ namespace Vacation.Models
         {
             Database.EnsureCreated();
         }
+
+        public DbSet<Vacation.Models.Basket> Basket { get; set; }
     }
 }

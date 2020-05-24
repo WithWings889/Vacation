@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vacation.Models
 {
-    public class Country
+    public partial class Country
     {
         public Country()
         {

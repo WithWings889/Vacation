@@ -10,12 +10,12 @@ namespace Vacation.Models
     {
         public Tour()
         {
-            //Baskets = new List<Basket>();
+            Baskets = new List<Basket>();
         }
         public int Id { get; set; }
         public DateTime DateOfDeparture { get; set; }
         public DateTime DateOfReturn { get; set; }
-        public int TransportId { get; set; }
+        public int? TransportId { get; set; }
         public int CityId { get; set; }
 
         [Required]
@@ -28,6 +28,6 @@ namespace Vacation.Models
         public virtual Transport Transport { get; set; }
         public virtual City City { get; set; }
 
-        //public virtual ICollection<Basket> Baskets{ get; set; }
+        public virtual ICollection<Basket> Baskets{ get; set; }
 }
 }
