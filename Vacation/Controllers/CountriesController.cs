@@ -79,6 +79,7 @@ namespace Vacation.Controllers
         [HttpPost]
         public async Task<ActionResult<Country>> PostCountry(Country country)
         {
+            
             _context.Countries.Add(country);
             await _context.SaveChangesAsync();
 
@@ -105,5 +106,8 @@ namespace Vacation.Controllers
         {
             return _context.Countries.Any(e => e.Id == id);
         }
+
+
     }
+
 }

@@ -23,6 +23,7 @@ namespace Vacation
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<VacationDBContext>(options => options.UseSqlServer(connection));
             services.AddControllers();
+            services.AddCors();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -32,6 +33,8 @@ namespace Vacation
             }
             app.UseDefaultFiles();
             app.UseStaticFiles();
+
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200"));
 
             app.UseRouting();
             app.UseEndpoints(endpoints =>

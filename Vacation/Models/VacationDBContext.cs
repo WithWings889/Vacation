@@ -24,6 +24,7 @@ namespace Vacation.Models
         {
             Database.EnsureCreated();
         }
+        public VacationDBContext() { }
 
         public DbSet<Vacation.Models.Basket> Basket { get; set; }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\visual_studio_c#\\Vacation\\Vacation.csproj": {}
+    "C:\\Users\\Кися\\Desktop\\Учить2 курс\\ІСТП\\Vacation\\Vacation\\Vacation.csproj": {}
   },
   "projects": {
-    "H:\\visual_studio_c#\\Vacation\\Vacation.csproj": {
+    "C:\\Users\\Кися\\Desktop\\Учить2 курс\\ІСТП\\Vacation\\Vacation\\Vacation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\visual_studio_c#\\Vacation\\Vacation.csproj",
+        "projectUniqueName": "C:\\Users\\Кися\\Desktop\\Учить2 курс\\ІСТП\\Vacation\\Vacation\\Vacation.csproj",
         "projectName": "Vacation",
-        "projectPath": "H:\\visual_studio_c#\\Vacation\\Vacation.csproj",
+        "projectPath": "C:\\Users\\Кися\\Desktop\\Учить2 курс\\ІСТП\\Vacation\\Vacation\\Vacation.csproj",
         "packagesPath": "C:\\Users\\Кися\\.nuget\\packages\\",
-        "outputPath": "H:\\visual_studio_c#\\Vacation\\obj\\",
+        "outputPath": "C:\\Users\\Кися\\Desktop\\Учить2 курс\\ІСТП\\Vacation\\Vacation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Кися\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.3, )"
